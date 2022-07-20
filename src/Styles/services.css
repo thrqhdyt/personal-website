@@ -1,0 +1,142 @@
+.services {
+  background-color: #f0ebe3;
+  padding: 100px 10%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.services-list {
+  display: flex;
+  background-color: white;
+  margin-bottom: 20px;
+  width: 400px;
+  padding: 20px 20px;
+  border-radius: 20px;
+  box-shadow: 3px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.services-text h4 {
+  color: #134b43;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.services-text p {
+  color: #134b43;
+  font-size: 13px;
+}
+
+.item-one > .services-icons {
+  padding: 10px 15px;
+  border-radius: 60px;
+  background-color: #134b43;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.item-two > .services-icons {
+  padding: 10px 13px;
+  border-radius: 60px;
+  background-color: #d7720c;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.item-three > .services-icons {
+  padding: 10px 15px;
+  border-radius: 60px;
+  background-color: #bd1a1a;
+  color: #fff;
+  margin-right: 15px;
+}
+
+.services-content {
+  margin-left: 100px;
+  width: 400px;
+  margin-top: -30px;
+}
+
+.services-content h2 {
+  color: #134b43;
+  font-size: 44px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.services-content p {
+  color: #134b43;
+  font-size: 14px;
+  letter-spacing: 2px;
+  word-spacing: 4px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.services-content > .btn-download {
+  padding: 7px 20px;
+  background-color: #134b43;
+  color: white;
+  border-radius: 20px;
+  font-weight: 500;
+  border: none;
+  transition: 0.5s;
+  font-size: 12px;
+}
+
+
+.services-content > .btn-download:hover {
+  background-color: #228576;
+}
+
+@media screen and (max-width: 920px) {
+  .services {
+    padding: 70px 5%;
+  }
+
+  .services-list {
+    width: 350px;
+  }
+
+  .services-content {
+    margin-left: 50px;
+    margin-top: 0;
+  }
+
+  .services-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .services {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 50px 3%;
+  }
+
+  .services-content {
+    margin-left: 0;
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .services-content h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+  }
+
+  .services-content > .btn-download {
+    margin-top: 10px;
+  }
+
+  .services-item {
+    margin-top: 35px;
+  }
+
+  .services-list {
+    width: 100%;
+  }
+}

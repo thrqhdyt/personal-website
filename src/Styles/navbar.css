@@ -1,0 +1,160 @@
+.navbar {
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hamburger {
+  display: none;
+  border: none;
+  height: 40px;
+  width: 40px;
+  padding: 7px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #134b43;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  font-size: 24px;
+  transform: translateY(-50%);
+}
+
+.nav-brand {
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+}
+
+.nav-brand h3 {
+  color: #134b43;
+}
+
+.nav-item ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.nav-list {
+  position: relative;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #134b43;
+  text-transform: uppercase;
+  transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: #134b43;
+}
+
+.nav-list:before,
+.nav-list::after {
+  content: '';
+  position: absolute;
+  transition: inherit;
+  z-index: -1;
+}
+
+.nav-list:hover {
+  color: #29a391;
+}
+
+.nav-list:hover:before {
+  transition-delay: 0s;
+}
+
+.left-effect:before,
+.left-effect:after {
+  top: 0;
+  width: 0;
+  height: 100%;
+}
+
+.left-effect:before {
+  left: 0;
+  border-bottom: 2px solid #134b43;
+}
+
+.left-effect:hover:before,
+.left-effect:hover:after {
+  width: 100%;
+}
+
+.phone-number {
+  display: flex;
+  padding: 2px 15px;
+  border: 1px solid #134b43;
+  border-radius: 30px;
+  transition: 0.5s;
+  font-size: 14px;
+  letter-spacing: 1px;
+  align-items: center;
+}
+
+.phone-number p {
+  margin-right: 10px;
+}
+
+.phone-number i {
+  background-color: #134b43;
+  color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.phone-number:hover {
+  background-color: #134b43;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 10px 3%;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .phone-number {
+    display: none;
+  }
+  .nav-item.expand ul {
+    display: block;
+  }
+
+  .nav-item ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    height: 35vh;
+    background-color: white;
+    border-top: 1px solid #eee;
+  }
+
+  .nav-item li {
+    text-align: center;
+    margin: 0;
+  }
+
+  .nav-item li a {
+    color: #134b43;
+    width: 100%;
+    padding: 20px 0;
+  }
+
+  .nav-item li:hover {
+    background-color: #eee;
+  }
+}
